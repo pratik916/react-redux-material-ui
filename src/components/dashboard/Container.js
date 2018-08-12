@@ -19,8 +19,6 @@ const styles = theme => ({
         backgroundColor: theme.palette.background.paper,
     },
     gridList: {
-        // width: 500,
-        // height: 450,
         paddingLeft: 100,
         paddingRight: 100,
         paddingTop: 50,

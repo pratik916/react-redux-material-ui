@@ -1,35 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-import withRoot from "../withRoot";
+import withRoot from "../helpers/withRoot";
 import Grid from "@material-ui/core/Grid";
 
-import HeaderAppBar from "../components/HeaderAppBar";
-import Container from "../components/Container";
+import HeaderAppBar from "../components/shared/HeaderAppBar";
+import Container from "../components/dashboard/Container";
 
 const styles = theme => ({
   root: {
-    paddingTop: theme.spacing.unit * 2
+    paddingTop: theme.spacing.unit * 0
   }
 });
 
 class App extends React.Component {
-  state = {
-    open: false
-  };
-
-  handleClose = () => {
-    this.setState({
-      open: false
-    });
-  };
-
-  handleClick = () => {
-    this.setState({
-      open: true
-    });
-  };
-
   render() {
     const { classes } = this.props;
 

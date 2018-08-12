@@ -80,7 +80,7 @@ class HeaderAppBar extends Component {
                   </Grid>
                   <Grid item lg={6}>
                     <Typography gutterBottom variant="headline" component="h3" className={classes.bannerText}>
-                      <LocationOnOutlined/> My Location
+                      <LocationOnOutlined /> <span>My Location</span>
                     </Typography>
                   </Grid>
                 </Grid>
