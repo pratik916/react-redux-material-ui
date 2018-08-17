@@ -28,7 +28,7 @@ const styles = {
   },
   bannerContainer: {
     height: 0,
-    paddingTop: "25%"
+    paddingTop: "25%",
   },
   bannerContent: {
     bottom: "10%",
@@ -47,7 +47,8 @@ const styles = {
     float: 'right'
   },
   banner: {
-    position: 'relative'
+    position: 'relative',
+    borderRadius: 0,
   }
 };
 
@@ -55,7 +56,7 @@ class HeaderAppBar extends Component {
     render() {
         const { classes } = this.props;
         return <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="sticky">
               <Toolbar>
                 <IconButton color="inherit" className={classes.menuButton}>
                   <AccountBalanceOutlined />

@@ -8,10 +8,16 @@ import apiConfig from "../config/api";
 
 import HeaderAppBar from "../components/shared/HeaderAppBar";
 import Container from "../components/dashboard/Container";
+import ContainerNew from "../components/dashboard/ContainerNew";
+import Footer from "../components/shared/Footer";
 
 const styles = theme => ({
   root: {
     paddingTop: theme.spacing.unit * 0
+  },
+  middleContainer: {
+    flexGrow: 1,
+    backgroundColor: "rgba(231, 231, 231, 0.39)"
   }
 });
 
@@ -23,9 +29,13 @@ class App extends React.Component {
     const { classes } = this.props;
 
     return <Grid container className={classes.root} spacing={0} justify="center">
-        <Grid item xs={10}>
+        <Grid item lg={10} md={12} xs={12} sm={12}>
           <HeaderAppBar />
-          <Container />
+          {/* <Container /> */}
+          <Grid container className={classes.middleContainer} alignItems="center" justify="center">
+            <ContainerNew />
+            <Footer />
+          </Grid>
         </Grid>
       </Grid>;
   }
