@@ -55,7 +55,7 @@ const styles = {
 class HeaderAppBar extends Component {
     render() {
         const { classes } = this.props;
-        return <div className={classes.root}>
+      return <React.Fragment className={classes.root}>
             <AppBar position="sticky">
               <Toolbar>
                 <IconButton color="inherit" className={classes.menuButton}>
@@ -87,7 +87,7 @@ class HeaderAppBar extends Component {
                 </Grid>
               </CardContent>
             </Card>
-          </div>;
+          </React.Fragment>;
     }
 }
 
