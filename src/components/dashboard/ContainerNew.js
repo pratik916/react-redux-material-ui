@@ -62,8 +62,8 @@ class ContainerNew extends Component {
                                         </Typography>
                                         <Typography gutterBottom>
                                             {`
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                                        `}
+                                              Crowdbotics
+                                            `}
                                         </Typography>
                                     </CardContent>
                                 </Card>
